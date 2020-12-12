@@ -67,7 +67,7 @@ public class AlumnoController {
 		
 		
 		if(alumno == null) {
-			response.put("Mensaje", "El cliente con Correo: ".concat(user.concat("No existe en la base de datos")));
+			response.put("Mensaje", "El alumno con Correo: ".concat(user.concat("No existe en la base de datos")));
 			return new ResponseEntity<Map<String,Object>>(response,HttpStatus.NOT_FOUND);
 		}
 		
